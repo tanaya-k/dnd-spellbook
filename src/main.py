@@ -1,0 +1,2 @@
+import spellsInfo
+import listOfSpellsInfo
