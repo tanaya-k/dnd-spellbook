@@ -1,1279 +1,751 @@
 [
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a sprinkling of holy water"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Bless",
+                  "classes": [
+                        "cleric",
+                        "paladin"
                   ],
-                  "raw": "V, S, M (a sprinkling of holy water)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
-            "duration": "Concentration, up to 1 minute",
-            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
-            "level": "1",
-            "name": "Bless",
-            "range": "30 feet",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level enchantment"
+                  "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "30 feet",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn\u2019t understand your language, or if your command is directly harmful to it.\n\nSome typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can\u2019t follow your command, the spell ends.\n\nApproach: The target moves toward you by the shortest and most direct route, Ending its turn if it moves within 5 feet of you.\nDrop: The target drops whatever it is holding and then ends its turn.\nFlee: The target spends its turn moving away from you by the fastest available means.\nGrovel: The target falls prone and then ends its turn.\nHalt: The target doesn't move and takes no Actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.",
-            "duration": "1 round",
-            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
-            "level": "1",
-            "name": "Command",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level enchantment"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move into a space that is more than 30 feet away from you; if it succeeds on this saving throw, the spell doesn't restrict the target's movement for that turn.\n\nThe spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "1",
-            "name": "Compelled Duel",
-            "range": "30 feet",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level enchantment"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
-            "duration": "Instantaneous",
-            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
-            "level": "1",
-            "name": "Cure Wounds",
-            "range": "Touch",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "level1"
-            ],
-            "type": "1st-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "1",
-            "name": "Detect Evil and Good",
-            "range": "Self",
-            "ritual": false,
-            "school": "divination",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level divination"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "sorcerer",
-                  "wizard"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "1",
-            "name": "Detect Magic",
-            "range": "Self",
-            "ritual": true,
-            "school": "divination",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "sorcerer",
-                  "wizard",
-                  "level1"
-            ],
-            "type": "1st-level divination (Ritual)"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a yew leaf"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Command",
+                  "classes": [
+                        "cleric",
+                        "paladin"
                   ],
-                  "raw": "V, S, M (a yew leaf)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "1",
-            "name": "Detect Poison and Disease",
-            "range": "Self",
-            "ritual": true,
-            "school": "divination",
-            "tags": [
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "level1"
-            ],
-            "type": "1st-level divination (Ritual)"
+                  "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn\u2019t understand your language, or if your command is directly harmful to it.\n\nSome typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can\u2019t follow your command, the spell ends.\n\nApproach: The target moves toward you by the shortest and most direct route, Ending its turn if it moves within 5 feet of you.\nDrop: The target drops whatever it is holding and then ends its turn.\nFlee: The target spends its turn moving away from you by the fastest available means.\nGrovel: The target falls prone and then ends its turn.\nHalt: The target doesn't move and takes no Actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.",
+                  "duration": "1 round",
+                  "level": "1",
+                  "range": "60 feet",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "1",
-            "name": "Divine Favor",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.",
-            "duration": "Concentration, up to 1 minute",
-            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
-            "level": "1",
-            "name": "Heroism",
-            "range": "Touch",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "bard",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level enchantment"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "holy water or powdered silver and iron, which the spell consumes"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Compelled Duel",
+                  "classes": [
+                        "paladin"
                   ],
-                  "raw": "V, S, M (holy water or powdered silver and iron, which the spell consumes)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Until the spell ends, one willing creature you touch is protected against certain types of creatures:  aberrations, celestials, elementals, fey, fiends, and undead.\n\nThe protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "1",
-            "name": "Protection from Evil and Good",
-            "range": "Touch",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard",
-                  "level1"
-            ],
-            "type": "1st-level abjuration"
+                  "description": "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move into a space that is more than 30 feet away from you; if it succeeds on this saving throw, the spell doesn't restrict the target's movement for that turn.\n\nThe spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "30 feet",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "druid",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.",
-            "duration": "Instantaneous",
-            "level": "1",
-            "name": "Purify Food and Drink",
-            "range": "10 feet",
-            "ritual": false,
-            "school": "transmutation",
-            "tags": [
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level transmutation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "At your touch, all curses affecting one creature or object end. If the object is a cursed magical item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.",
-            "duration": "Instantaneous",
-            "level": "3",
-            "name": "Remove Curse",
-            "range": "Touch",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard",
-                  "level3"
-            ],
-            "type": "3rd-level abjuration"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a small parchment with a bit of holy text written on it"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Cure Wounds",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger"
                   ],
-                  "raw": "V, S, M (a small parchment with a bit of holy text written on it)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "1",
-            "name": "Shield of Faith",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level abjuration"
+                  "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+                  "duration": "Instantaneous",
+                  "level": "1",
+                  "range": "Touch",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit a creature wiht a melee weapon attack during the spell's duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends.",
-            "duration": "Concentration, up to 1 minute",
-            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot level above 1st.",
-            "level": "1",
-            "name": "Searing Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level evocation"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "1",
-            "name": "Thunderous Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level evocation"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "1",
-            "name": "Wrathful Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level1"
-            ],
-            "type": "1st-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a tiny strip of white cloth"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Detect Evil and Good",
+                  "classes": [
+                        "cleric",
+                        "paladin"
                   ],
-                  "raw": "V, S, M (a tiny strip of white cloth)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target\u2019s hit point maximum and current hit points increase by 5 for the duration.",
-            "duration": "8 hours",
-            "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, a target\u2019s hit points increase by an additional 5 for each slot level above 2nd.",
-            "level": "2",
-            "name": "Aid",
-            "range": "30 feet",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level2"
-            ],
-            "type": "2nd-level abjuration"
+                  "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
-            "duration": "Instantaneous",
-            "level": "2",
-            "name": "Lesser Restoration",
-            "range": "Touch",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "level2"
-            ],
-            "type": "2nd-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "4",
-            "name": "Aura of Life",
-            "range": "Self (30-foot radius)",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "paladin",
-                  "level4"
-            ],
-            "type": "4th-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "4",
-            "name": "Aura of Purity",
-            "range": "Self (30-foot radius)",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "paladin",
-                  "level4"
-            ],
-            "type": "4th-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "3",
-            "name": "Aura Of Vitality",
-            "range": "Self (30-foot radius)",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin",
-                  "sorcerer",
-                  "warlock",
-                  "wizard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "an item distasteful to the target"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Detect Magic",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger",
+                        "sorcerer",
+                        "wizard"
                   ],
-                  "raw": "V, S, M (an item distasteful to the target)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.\n\nIf the target is native to the plane of existance you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.\n\nIf the target is native to a different plane of existance than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.",
-            "duration": "Concentration, up to 1 minute",
-            "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
-            "level": "4",
-            "name": "Banishment",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "sorcerer",
-                  "warlock",
-                  "wizard",
-                  "level4"
-            ],
-            "type": "4th-level abjuration"
+                  "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit a creature with a melee weapon attack during this spell\u2019s duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.\n\nA creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "3",
-            "name": "Blinding Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn\u2019t go bad.",
-            "duration": "Instantaneous",
-            "level": "3",
-            "name": "Create Food and Water",
-            "range": "30 feet",
-            "ritual": false,
-            "school": "conjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level conjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "3",
-            "name": "Crusader's Mantle",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "sorcerer"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.\n\nIf you chose a point on an object you are holding or one that isn\u2019t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.\n\nIf any of this spell\u2019s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.",
-            "duration": "1 hour",
-            "level": "3",
-            "name": "Daylight",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "sorcerer",
-                  "level3"
-            ],
-            "type": "3rd-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "sorcerer",
-                  "warlock",
-                  "wizard"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell\u2019s level. On a successful check, the spell ends.",
-            "duration": "Instantaneous",
-            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell\u2019s level is equal to or less than the level of the spell slot you used.",
-            "level": "3",
-            "name": "Dispel Magic",
-            "range": "120 feet",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "sorcerer",
-                  "warlock",
-                  "wizard",
-                  "level3"
-            ],
-            "type": "3rd-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.",
-            "duration": "Concentration, up to 1 hour",
-            "higher_levels": "When you cast this spell using a spell slot of 5th or 6th level, the bonus to attack rolls increases to +2 and the extra damage increases to 2d4. When you use a spell slot of 7th level or higher, the bonus increases to +3 and the extra damage increases to 3d4.",
-            "level": "3",
-            "name": "Elemental Weapon",
-            "range": "Touch",
-            "ritual": false,
-            "school": "transmutation",
-            "tags": [
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level transmutation"
-      },
-      {
-            "casting_time": "1 minute",
-            "classes": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "holy water or powdered silver and iron worth at least 100 gp, which the spell consumes"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Detect Poison and Disease",
+                  "classes": [
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger"
                   ],
-                  "raw": "V, S, M (holy water or powdered silver and iron worth at least 100 gp, which the spell consumes)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.\n\nChoose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:\n\n* The creature can\u2019t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\n\n* The creature has disadvantage on attack rolls against targets within the cylinder.\n\n* Targets within the cylinder can\u2019t be charmed, frightened, or possessed by the creature.\n\nWhen you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.",
-            "duration": "1 hour",
-            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.",
-            "level": "3",
-            "name": "Magic Circle",
-            "range": "10 feet",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "warlock",
-                  "wizard",
-                  "level3"
-            ],
-            "type": "3rd-level abjuration"
+                  "description": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "diamonds worth 300 gp, which the spell consumes"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Divine Favor",
+                  "classes": [
+                        "paladin"
                   ],
-                  "raw": "V, S, M (diamonds worth 300 gp, which the spell consumes)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can\u2019t return to life a creature that has died of old age, nor can it restore any missing body parts.",
-            "duration": "Instantaneous",
-            "level": "3",
-            "name": "Revivify",
-            "range": "Touch",
-            "ritual": false,
-            "school": "conjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level3"
-            ],
-            "type": "3rd-level conjuration"
+                  "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You touch a creature and grant it a measure of protection from death.\n\nThe first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.\n\nIf the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.",
-            "duration": "8 hours",
-            "level": "4",
-            "name": "Death Ward",
-            "range": "Touch",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level4"
-            ],
-            "type": "4th-level abjuration"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it\u2019s invisible, and the target sheds dim light in a 5-foot radius and can\u2019t become invisible until the spell ends.",
-            "duration": "Concentration, up to 1 minute",
-            "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
-            "level": "2",
-            "name": "Branding Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level2"
-            ],
-            "type": "2nd-Level evocation"
-      },
-      {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "5",
-            "name": "Banishing Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "paladin",
-                  "level5"
-            ],
-            "type": "5th-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "5",
-            "name": "Circle of Power",
-            "range": "Self (30-foot radius)",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "paladin",
-                  "level5"
-            ],
-            "type": "5th-level abjuration"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.",
-            "duration": "Instantaneous",
-            "level": "5",
-            "name": "Destructive Wave",
-            "range": "Self (30-foot radius)",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level5"
-            ],
-            "type": "5th-level evocation"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "holy water or powdered silver and iron"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Heroism",
+                  "classes": [
+                        "bard",
+                        "paladin"
                   ],
-                  "raw": "V, S, M (holy water or powdered silver and iron)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.\n\nYou can end the spell early by using either of the following special functions.\n\n* Break Enchantment. As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.\n* Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn\u2019t there already). If they are already on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "5",
-            "name": "Dispel Evil and Good",
-            "range": "Self",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "level5"
-            ],
-            "type": "5th-level abjuration"
+                  "description": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "Touch",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "10 minutes",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your DM mught allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.\n\nYour steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.\n\nWhen the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.\n\nWhile your steed is within 1 mile of you, you can communicate with it telepathically.\n\nYou can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.",
-            "duration": "Instantaneous",
-            "level": "2",
-            "name": "Find Steed",
-            "range": "30 feet",
-            "ritual": false,
-            "school": "conjuration",
-            "tags": [
-                  "paladin",
-                  "level2"
-            ],
-            "type": "2nd-level conjuration"
-      },
-      {
-            "casting_time": "1 minute",
-            "classes": [
-                  "cleric",
-                  "wizard",
-                  "paladin",
-                  "druid",
-                  "bard"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.\n\nYou can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.\n\nYou can end the spell early by using an action to dismiss it. A *[remove curse](../remove-curse/ \"remove curse (lvl 3)\")*, *[greater restoration](../greater-restoration/ \"greater restoration (lvl 5)\")*, or *[wish](../wish/ \"wish (lvl 9)\")* spell also ends it.",
-            "duration": "30 days",
-            "higher_levels": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
-            "level": "5",
-            "name": "Geas",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "cleric",
-                  "wizard",
-                  "paladin",
-                  "druid",
-                  "bard",
-                  "level5"
-            ],
-            "type": "5th-level enchantment"
-      },
-      {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "wizard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a bit of fur from a bloodhound"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Protection from Evil and Good",
+                  "classes": [
+                        "cleric",
+                        "paladin",
+                        "warlock",
+                        "wizard"
                   ],
-                  "raw": "V, S, M (a bit of fur from a bloodhound)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.\n\nThe spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close\u2014-within 30 feet-\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a *[polymorph](../polymorph/ \"polymorph (lvl 4)\")* spell, this spell doesn\u2019t locate the creature.\n\nThis spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.",
-            "duration": "Concentration, up to 1 hour",
-            "level": "4",
-            "name": "Locate Creature",
-            "range": "Self",
-            "ritual": false,
-            "school": "divination",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "wizard",
-                  "level4"
-            ],
-            "type": "4th-level divination"
+                  "description": "Until the spell ends, one willing creature you touch is protected against certain types of creatures:  aberrations, celestials, elementals, fey, fiends, and undead.\n\nThe protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "1",
+                  "range": "Touch",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "wizard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a forked twig"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Purify Food and Drink",
+                  "classes": [
+                        "cleric",
+                        "druid",
+                        "paladin"
                   ],
-                  "raw": "V, S, M (a forked twig)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.\n\nThe spell can locate a specific object known to you, as long as you have seen it up close-\u2014within 30 feet-\u2014at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.\n\nThis spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.",
-            "duration": "Concentration, up to 10 minutes",
-            "level": "2",
-            "name": "Locate Object",
-            "range": "Self",
-            "ritual": false,
-            "school": "divination",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "druid",
-                  "paladin",
-                  "ranger",
-                  "wizard",
-                  "level2"
-            ],
-            "type": "2nd-level divination"
+                  "description": "All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.",
+                  "duration": "Instantaneous",
+                  "level": "1",
+                  "range": "10 feet",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin",
-                  "wizard"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.",
-            "duration": "Concentration, up to 1 hour",
-            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.",
-            "level": "2",
-            "name": "Magic Weapon",
-            "range": "Touch",
-            "ritual": false,
-            "school": "transmutation",
-            "tags": [
-                  "paladin",
-                  "wizard",
-                  "level2"
-            ],
-            "type": "2nd-level transmutation"
-      },
-      {
-            "casting_time": "1 hour",
-            "classes": [
-                  "cleric",
-                  "paladin",
-                  "bard"
-            ],
-            "components": {
-                  "material": true,
-                  "materials_needed": [
-                        "a diamond worth at least 500 gp, which the spell consumes"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Remove Curse",
+                  "classes": [
+                        "cleric",
+                        "paladin",
+                        "warlock",
+                        "wizard"
                   ],
-                  "raw": "V, S, M (a diamond worth at least 500 gp, which the spell consumes)",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.\n\nThis spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can\u2019t return an undead creature to life.\n\nThis spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival\u2014its head, for instance\u2014the spell automatically fails.\n\nComing back from the dead is an ordeal. The target takes a \u22124 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.",
-            "duration": "Instantaneous",
-            "level": "5",
-            "name": "Raise Dead",
-            "range": "Touch",
-            "ritual": false,
-            "school": "necromancy",
-            "tags": [
-                  "cleric",
-                  "paladin",
-                  "bard",
-                  "level5"
-            ],
-            "type": "5th-level necromancy"
+                  "description": "At your touch, all curses affecting one creature or object end. If the object is a cursed magical item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.",
+                  "duration": "Instantaneous",
+                  "level": "3",
+                  "range": "Touch",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "cleric",
-                  "ranger",
-                  "paladin",
-                  "druid"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
-            "duration": "1 hour",
-            "level": "2",
-            "name": "Protection from Poison",
-            "range": "Touch",
-            "ritual": false,
-            "school": "abjuration",
-            "tags": [
-                  "cleric",
-                  "ranger",
-                  "paladin",
-                  "druid",
-                  "level2"
-            ],
-            "type": "2nd-level abjuration"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Shield of Faith",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "1",
+                  "range": "60 feet",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 bonus action",
-            "classes": [
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V",
-                  "somatic": false,
-                  "verbal": true
-            },
-            "description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn.",
-            "duration": "Concentration, up to 1 minute",
-            "level": "4",
-            "name": "Staggering Smite",
-            "range": "Self",
-            "ritual": false,
-            "school": "evocation",
-            "tags": [
-                  "paladin",
-                  "level4"
-            ],
-            "type": "4th-level evocation"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Searing Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit a creature wiht a melee weapon attack during the spell's duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a successful save, the spell ends. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
       },
       {
-            "casting_time": "1 action",
-            "classes": [
-                  "bard",
-                  "cleric",
-                  "paladin"
-            ],
-            "components": {
-                  "material": false,
-                  "raw": "V, S",
-                  "somatic": true,
-                  "verbal": true
-            },
-            "description": "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. you know whether each creature succeeds or fails on its saving throw.\n\nAn affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.",
-            "duration": "10 minutes",
-            "level": "2",
-            "name": "Zone of Truth",
-            "range": "60 feet",
-            "ritual": false,
-            "school": "enchantment",
-            "tags": [
-                  "bard",
-                  "cleric",
-                  "paladin",
-                  "level2"
-            ],
-            "type": "2nd-level enchantment"
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Thunderous Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Wrathful Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "1",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Aid",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target\u2019s hit point maximum and current hit points increase by 5 for the duration.",
+                  "duration": "8 hours",
+                  "level": "2",
+                  "range": "30 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Lesser Restoration",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger"
+                  ],
+                  "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+                  "duration": "Instantaneous",
+                  "level": "2",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Aura of Life",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "4",
+                  "range": "Self (30-foot radius)",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Aura of Purity",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "4",
+                  "range": "Self (30-foot radius)",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Aura Of Vitality",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "3",
+                  "range": "Self (30-foot radius)",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Banishment",
+                  "classes": [
+                        "cleric",
+                        "paladin",
+                        "sorcerer",
+                        "warlock",
+                        "wizard"
+                  ],
+                  "description": "You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.\n\nIf the target is native to the plane of existance you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.\n\nIf the target is native to a different plane of existance than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "4",
+                  "range": "60 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Blinding Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit a creature with a melee weapon attack during this spell\u2019s duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.\n\nA creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "3",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Create Food and Water",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn\u2019t go bad.",
+                  "duration": "Instantaneous",
+                  "level": "3",
+                  "range": "30 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Crusader's Mantle",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "3",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Daylight",
+                  "classes": [
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger",
+                        "sorcerer"
+                  ],
+                  "description": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.\n\nIf you chose a point on an object you are holding or one that isn\u2019t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.\n\nIf any of this spell\u2019s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.",
+                  "duration": "1 hour",
+                  "level": "3",
+                  "range": "60 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Dispel Magic",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "sorcerer",
+                        "warlock",
+                        "wizard"
+                  ],
+                  "description": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell\u2019s level. On a successful check, the spell ends.",
+                  "duration": "Instantaneous",
+                  "level": "3",
+                  "range": "120 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Elemental Weapon",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.",
+                  "duration": "Concentration, up to 1 hour",
+                  "level": "3",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Magic Circle",
+                  "classes": [
+                        "cleric",
+                        "paladin",
+                        "warlock",
+                        "wizard"
+                  ],
+                  "description": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.\n\nChoose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:\n\n* The creature can\u2019t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\n\n* The creature has disadvantage on attack rolls against targets within the cylinder.\n\n* Targets within the cylinder can\u2019t be charmed, frightened, or possessed by the creature.\n\nWhen you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.",
+                  "duration": "1 hour",
+                  "level": "3",
+                  "range": "10 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Revivify",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can\u2019t return to life a creature that has died of old age, nor can it restore any missing body parts.",
+                  "duration": "Instantaneous",
+                  "level": "3",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Death Ward",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "You touch a creature and grant it a measure of protection from death.\n\nThe first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.\n\nIf the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.",
+                  "duration": "8 hours",
+                  "level": "4",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Branding Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it\u2019s invisible, and the target sheds dim light in a 5-foot radius and can\u2019t become invisible until the spell ends.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "2",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Banishing Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "5",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Circle of Power",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "5",
+                  "range": "Self (30-foot radius)",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Destructive Wave",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.",
+                  "duration": "Instantaneous",
+                  "level": "5",
+                  "range": "Self (30-foot radius)",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Dispel Evil and Good",
+                  "classes": [
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.\n\nYou can end the spell early by using either of the following special functions.\n\n* Break Enchantment. As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.\n* Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn\u2019t there already). If they are already on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "5",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Find Steed",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your DM mught allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.\n\nYour steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.\n\nWhen the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.\n\nWhile your steed is within 1 mile of you, you can communicate with it telepathically.\n\nYou can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.",
+                  "duration": "Instantaneous",
+                  "level": "2",
+                  "range": "30 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Geas",
+                  "classes": [
+                        "cleric",
+                        "wizard",
+                        "paladin",
+                        "druid",
+                        "bard"
+                  ],
+                  "description": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.\n\nYou can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.\n\nYou can end the spell early by using an action to dismiss it. A *[remove curse](../remove-curse/ \"remove curse (lvl 3)\")*, *[greater restoration](../greater-restoration/ \"greater restoration (lvl 5)\")*, or *[wish](../wish/ \"wish (lvl 9)\")* spell also ends it.",
+                  "duration": "30 days",
+                  "level": "5",
+                  "range": "60 feet",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Locate Creature",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger",
+                        "wizard"
+                  ],
+                  "description": "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.\n\nThe spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close\u2014-within 30 feet-\u2014at least once. If the creature you described or named is in a different form, such as being under the effects of a *[polymorph](../polymorph/ \"polymorph (lvl 4)\")* spell, this spell doesn\u2019t locate the creature.\n\nThis spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.",
+                  "duration": "Concentration, up to 1 hour",
+                  "level": "4",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Locate Object",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "druid",
+                        "paladin",
+                        "ranger",
+                        "wizard"
+                  ],
+                  "description": "Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.\n\nThe spell can locate a specific object known to you, as long as you have seen it up close-\u2014within 30 feet-\u2014at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.\n\nThis spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.",
+                  "duration": "Concentration, up to 10 minutes",
+                  "level": "2",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Magic Weapon",
+                  "classes": [
+                        "paladin",
+                        "wizard"
+                  ],
+                  "description": "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.",
+                  "duration": "Concentration, up to 1 hour",
+                  "level": "2",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Raise Dead",
+                  "classes": [
+                        "cleric",
+                        "paladin",
+                        "bard"
+                  ],
+                  "description": "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.\n\nThis spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can\u2019t return an undead creature to life.\n\nThis spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival\u2014its head, for instance\u2014the spell automatically fails.\n\nComing back from the dead is an ordeal. The target takes a \u22124 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.",
+                  "duration": "Instantaneous",
+                  "level": "5",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Protection from Poison",
+                  "classes": [
+                        "cleric",
+                        "ranger",
+                        "paladin",
+                        "druid"
+                  ],
+                  "description": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
+                  "duration": "1 hour",
+                  "level": "2",
+                  "range": "Touch",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Staggering Smite",
+                  "classes": [
+                        "paladin"
+                  ],
+                  "description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn.",
+                  "duration": "Concentration, up to 1 minute",
+                  "level": "4",
+                  "range": "Self",
+                  "fave": false
+            }
+      },
+      {
+            "model": "spells.Spell",
+            "pk": 1,
+            "fields": {
+                  "name": "Zone of Truth",
+                  "classes": [
+                        "bard",
+                        "cleric",
+                        "paladin"
+                  ],
+                  "description": "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. you know whether each creature succeeds or fails on its saving throw.\n\nAn affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.",
+                  "duration": "10 minutes",
+                  "level": "2",
+                  "range": "60 feet",
+                  "fave": false
+            }
       }
 ]
