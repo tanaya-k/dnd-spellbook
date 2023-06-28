@@ -10,7 +10,7 @@ class Classes(models.Model):
 class Spell(models.Model):
     name        = models.CharField(max_length = 200)
     classes     = models.ManyToManyField(Classes)
-    description = models.CharField(max_length = 1000) # may have to change this to a higher limit
+    description = models.CharField(max_length = 5000) # may have to change this to a higher limit
     duration    = models.CharField(max_length = 200)
     level       = models.IntegerField(default=1)
     range       = models.CharField(max_length=100)
