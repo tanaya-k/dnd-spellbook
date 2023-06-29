@@ -19,6 +19,8 @@ with open("warlock-spell-list.json") as warlock_spell_list:
 with open("wizard-spell-list.json") as wizard_spell_list:
     spells = json.load(wizard_spell_list)
 
+# [bard(1), cleric(2), druid(3), plaldin(4), ranger(5), sorcerer(6), warlock(7), wizard(8)]
+
 # Generate jsons for the different classes
 spell_arr = []
 count = 1
@@ -26,13 +28,31 @@ count = 1
 for spell in spells:
     
     # format to fixture
+    class_arr = []
+
+    if "bard" in spell['classes']:
+        class_arr.append(1)
+    if "cleric" in spell['classes']:
+        class_arr.append(2)
+    if "druid" in spell['classes']:
+        class_arr.append(3)
+    if "paladin" in spell['classes']:
+        class_arr.append(4)
+    if "ranger" in spell['classes']:
+        class_arr.append(5)
+    if "sorcerer" in spell['classes']:
+        class_arr.append(6)
+    if "warlock" in spell['classes']:
+        class_arr.append(7)
+    if "wizard" in spell['classes']:
+        class_arr.append(8)
 
     spell_dict = {
         "model": "spells.Spell",
         "pk": count,
         "fields": {
             "name": spell['name'],
-            "classes": spell['classes'],
+            "classes": class_arr,
             "description": spell['description'],
             "duration": spell['duration'],
             "level": spell['level'],
