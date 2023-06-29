@@ -1,23 +1,9 @@
 import json
 
-# change the json to a full spell list
+# Change the json to a full spell list
 
-"""with open("bard-spell-list.json") as bard_spell_list:
-    spells = json.load(bard_spell_list)
-with open("cleric-spell-list.json") as cleric_spell_list:
-    spells = json.load(cleric_spell_list)
-with open("druid-spell-list.json") as druid_spell_list:
-    spells = json.load(druid_spell_list)
-with open("paladin-spell-list.json") as paladin_spell_list:
-    spells = json.load(paladin_spell_list)
-with open("ranger-spell-list.json") as ranger_spell_list:
-    spells = json.load(ranger_spell_list)
-with open("sorcerer-spell-list.json") as sorcerer_spell_list:
-    spells = json.load(sorcerer_spell_list)
-with open("warlock-spell-list.json") as warlock_spell_list:
-    spells = json.load(warlock_spell_list)"""
-with open("wizard-spell-list.json") as wizard_spell_list:
-    spells = json.load(wizard_spell_list)
+with open("spells.json") as spell_list:
+    spells = json.load(spell_list)
 
 # [bard(1), cleric(2), druid(3), plaldin(4), ranger(5), sorcerer(6), warlock(7), wizard(8)]
 
@@ -75,19 +61,5 @@ for spell in spells:
     },
     """
 
-"""with open("bard-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("cleric-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("druid-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("paladin-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("ranger-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("sorcerer-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)
-with open("warlock-spell-list.json", "w") as spell_list:
-    json.dump(spell_arr, spell_list, indent = 6)"""
-with open("wizard-spell-list.json", "w") as spell_list:
+with open("spells.json", "w") as spell_list:
     json.dump(spell_arr, spell_list, indent = 6)
