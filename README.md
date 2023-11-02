@@ -29,4 +29,4 @@ Setup of the Django Framework using the tutorial supplied by the Django document
 - Use spell data from an updated and expansive source
 
 ## Sources
-Current: JSON files of spell data from https://github.com/vorpalhex/srd_spells (archived)
+Current: JSON files of spell data from [github repo of SRD Spells](https://github.com/vorpalhex/srd_spells) (archived)
