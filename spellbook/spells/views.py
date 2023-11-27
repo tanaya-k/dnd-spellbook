@@ -7,8 +7,6 @@ from .models import Spell
 # Create your views here.
 def index(request):
     spell_list = Spell.objects.all()
-
-    #  TODO: change to hyperlink table view?
     output = ", ".join([s.name for s in spell_list])
     return HttpResponse(output)
 
