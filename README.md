@@ -16,7 +16,7 @@ A website that displays spells used by Dungeons and Dragons players that come ma
 
 ## Technologies
 - Backend - Django Framework
-- Database management - SQLlite
+- Database management - SQLite
 - Frontend - HTML & CSS
 - Data - JSON
 
