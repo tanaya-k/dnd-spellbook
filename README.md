@@ -25,7 +25,8 @@ Setup of the Django Framework using the tutorial supplied by the Django document
 
 ## To-Do: Short term
 - Implement spells app
-    - Brainstorm frontend layout
+    - Link ReactJS to Django using new api app
+    - Implement Figma prototype using ReactJS
 - Implement spell account app
     - Finish setting up app
     - Brainstorm backend layout
